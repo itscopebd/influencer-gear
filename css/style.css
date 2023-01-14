@@ -1,0 +1,78 @@
+/* fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+
+    --primary-color: #E02C6D;
+    --secondary-color:#3A3A3A;
+    --product-title-color:#18191F;
+    --product_description_color:#787885;
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+    --third-font: 'Manrope', sans-serif;
+}
+li{
+    list-style: none;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* -----------------
+      header styles
+--------------------  */
+header{
+    padding: 30px 0;
+}
+.logo__title{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    font-feature-settings: 'liga' off;
+    color: var(--secondary-font);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav li a{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+    color: var(--secondary-color);  
+}
+
+
+/*---------------
+ banner styles 
+ ----------------*/
+ .banner__wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
