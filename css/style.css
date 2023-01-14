@@ -49,7 +49,7 @@ a {
 
 }
 /* section padding  */
-section.banner {
+section.banner, section.brand {
     padding: 50px 0;
 }
 
@@ -134,4 +134,16 @@ nav li a {
     padding: 20px;
     border: 1px solid #F1E4FF;
     border-radius: 50%;  
+}
+
+/*------------
+ brand styles
+--------------*/
+.brand__wrapper {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(1, 150px);
+    align-items: center;
+    border-top: 1px solid #C0CCDA;
+    border-bottom: 1px solid #C0CCDA;
 }
