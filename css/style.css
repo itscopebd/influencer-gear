@@ -63,7 +63,9 @@ a {
 -------------------*/
 
 section.banner,
-section.brand {
+section.brand,
+ section.products,
+section.featured__product {
     padding: 50px 0;
 }
 
@@ -191,16 +193,19 @@ nav li a {
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 }
+
 .single__product {
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     padding: 20px;
 }
-.single__product img{
+
+.single__product img {
     width: 100%;
 
 }
+
 .product__title {
     font-family: var(--primary-font);
     font-weight: 500;
@@ -219,34 +224,81 @@ nav li a {
     color: rgba(0, 0, 0, 0.87);
     margin-top: 8px;
 }
-.ratting{
+
+.ratting {
     font-family: var(--primary-font);
-font-weight: 700;
-font-size: 14px;
-line-height: 22px;
-letter-spacing: 0.1px;
-color: var(--secondary-color);
-margin-top: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    color: var(--secondary-color);
+    margin-top: 5px;
 
 }
-.ratting .fa-solid{
+
+.ratting .fa-solid {
     color: #FB8200;
 }
-.product__des{
+
+.product__des {
     font-family: var(--secondary-font);
-font-weight: 700;
-font-size: 14px;
-line-height: 143%;
-letter-spacing: 0.018em;
-color: #787885;
-margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.018em;
+    color: #787885;
+    margin-bottom: 8px;
 }
+
 .btn_wrapper {
     text-align: right;
 }
+
 .btn_wrapper .btn {
     background-color: #fff;
     color: var(--primary-color);
     margin-top: 30px;
 }
 
+/*------------------------
+ featured product styles
+--------------------------*/
+
+.featured__product_wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.image_wrap {
+    width: 50%;
+}
+
+.content__wrap {
+    width: 50%;
+}
+
+.featured__title {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60px;
+    color: var(--product-title-color);
+  
+}
+.featured__des{
+    font-family: var(--primary-font);
+font-weight: 700;
+font-size: 16px;
+line-height: 28px;
+color: #6C6C6C;
+margin: 13px 0;
+}
+.featured__product_wrapper .btn{
+    border-radius: 0;
+    padding: 10px 30px;
+    line-height: 30px;
+}
+.featured__product_wrapper img{
+    width: 80%;
+}
