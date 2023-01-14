@@ -65,7 +65,8 @@ a {
 section.banner,
 section.brand,
  section.products,
-section.featured__product {
+section.featured__product,
+.footer {
     padding: 50px 0;
 }
 
@@ -301,4 +302,48 @@ margin: 13px 0;
 }
 .featured__product_wrapper img{
     width: 80%;
+}
+
+/*----------------- 
+footer styles 
+--------------------*/
+
+.footer{
+    background-color: #0B0725;
+    color: #fff;
+    text-align: center;
+}
+.logo__content{
+    font-family: var(--primary-font);
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+font-feature-settings: 'liga' off;
+color: #FFFFFF;
+}
+
+.copy__right{
+    font-family: var(--third-font);
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+font-feature-settings: 'liga' off;
+color: #D9DBE1;
+margin: 10px 0;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.footer ul li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #23203A;
+
+
 }
