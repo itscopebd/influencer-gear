@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FFFFFF;
+}
+
 :root {
 
     --primary-color: #E02C6D;
@@ -46,12 +50,37 @@ a {
     border: none;
     margin-top: 10px;
     border-radius: 41px;
-
 }
-/* section padding  */
-section.banner, section.brand {
+
+.btn i {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+
+/*-----------------
+ section padding
+-------------------*/
+
+section.banner,
+section.brand {
     padding: 50px 0;
 }
+
+/*----------------------
+ section title styles
+------------------------*/
+
+.section__title {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
 
 /* -----------------
       header styles
@@ -129,21 +158,95 @@ nav li a {
     width: 50%;
     text-align: right;
 }
-.image__wrap img{
+
+.image__wrap img {
     width: 65%;
     padding: 20px;
     border: 1px solid #F1E4FF;
-    border-radius: 50%;  
+    border-radius: 50%;
 }
 
 /*------------
  brand styles
 --------------*/
+
 .brand__wrapper {
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 150px);
     align-items: center;
     border-top: 1px solid #C0CCDA;
     border-bottom: 1px solid #C0CCDA;
 }
+
+/*-----------------------
+ product section styles 
+-------------------------*/
+.products .container {
+    width: 75%;
+}
+
+.products__wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.single__product {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 20px;
+}
+.single__product img{
+    width: 100%;
+
+}
+.product__title {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 10px;
+    font-feature-settings: 'liga' off;
+    color: var(--product-title-color);
+}
+
+.price {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 8px;
+}
+.ratting{
+    font-family: var(--primary-font);
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0.1px;
+color: var(--secondary-color);
+margin-top: 5px;
+
+}
+.ratting .fa-solid{
+    color: #FB8200;
+}
+.product__des{
+    font-family: var(--secondary-font);
+font-weight: 700;
+font-size: 14px;
+line-height: 143%;
+letter-spacing: 0.018em;
+color: #787885;
+margin-bottom: 8px;
+}
+.btn_wrapper {
+    text-align: right;
+}
+.btn_wrapper .btn {
+    background-color: #fff;
+    color: var(--primary-color);
+    margin-top: 30px;
+}
+
