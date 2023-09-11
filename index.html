@@ -1,314 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Influencer-gear</title>
     <!-- fontawesome  -->
-    <script src="https://kit.fontawesome.com/286c7c8f95.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/286c7c8f95.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- styles  -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- header html  -->
     <header>
-        <div class="container">
-            <!-- phone nav  -->
-              <nav class="phone__nav">
-                <div class="bar">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="logo">
-                    <h3 class="logo__title">Influencer products</h3>
-                </div>
-                <ul>
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
-                </ul>
-              </nav>
-<!-- desktop mav  -->
-            <nav class="destop__nav">
-                <div class="logo">
-                    <h3 class="logo__title">Influencer products</h3>
-                </div>
-                <ul>
-                    <li> <a href="#">Home</a> </li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Log In</a></li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <!-- phone nav  -->
+        <nav class="phone__nav">
+          <div class="bar" id="hunburger">
+            <i class="fa-solid fa-bars" id="bars"></i>
+          </div>
+          <div class="logo">
+            <h3 class="logo__title">Influencer</h3>
+          </div>
+
+          <ul>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+          </ul>
+          <!-- mobile navbar  -->
+
+          <ul class="mobile__menu" id="mobile__menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log In</a></li>
+            
+          </ul>
+        </nav>
+        <!-- desktop mav  -->
+        <nav class="destop__nav">
+          <div class="logo">
+            <h3 class="logo__title">Influencer</h3>
+          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <!-- banner secttion html  -->
-        <section class="banner">
-            <div class="container">
-                <div class="banner__wrapper">
-                    <div class="content__wrap">
-                        <h3 class="banner__title">Start your Journey as Influencer</h3>
-                        <p class="banner__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum
-                            sed scelerisque eros. Lectus faucibus.</p>
-                        <button class="btn">Preebook now <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
-                    <div class="image__wrap">
-                        <img src="images/main-camera.png" alt="">
-                    </div>
-                </div>
+      <!-- banner secttion html  -->
+      <section class="banner">
+        <div class="container">
+          <div class="banner__wrapper">
+            <div class="content__wrap">
+              <h3 class="banner__title">Start your Journey as Influencer</h3>
+              <p class="banner__des">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+                vestibulum sed scelerisque eros. Lectus faucibus.
+              </p>
+              <button class="btn">
+                Preebook now <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
-        </section>
-        <!-- brand section html  -->
-        <section class="brand">
-            <div class="container">
-                <div class="brand__wrapper">
-                    <div>
-                        <img src="logos/Alibaba.svg" alt="">
-                    </div>
-                    <div>
-                        <img src="logos/Amazon.svg" alt="">
-                    </div>
-                    <div>
-                        <img src="logos/Daraz.pk Logo.svg" alt="">
-                    </div>
-                    <div>
-                        <img src="logos/Ebay.svg" alt="">
-                    </div>
-                    <div>
-                        <img src="logos/Rakuten.svg" alt="">
-                    </div>
-                    <div>
-                        <img src="logos/Target.svg" alt="">
-                    </div>
-                    <div>
-                        <img src="logos/Walmart.svg" alt="">
-                    </div>
-                </div>
+            <div class="image__wrap">
+              <img src="images/main-camera.png" alt="" />
             </div>
-        </section>
-        <!-- product section html  -->
-
-        <section class="products">
-            <div class="container">
-                <h3 class="section__title">Popular Collection</h3>
-                <div class="products__wrapper">
-
-                    <div class="single__product">
-                        <img src="images/tripod.png" alt="">
-                        <div class="product__info">
-                            <h3 class="product__title">Flex Tripod</h3>
-                            <h4 class="price">$50.48</h4>
-                            <p class="ratting">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <span>4.99</span>
-
-                            </p>
-                            <p class="product__des">Wordwide shifting available
-                                Buyers protection possible!</p>
-                        </div>
-
-                    </div>
-                    <div class="single__product">
-                        <img src="images/mic.png" alt="">
-                        <div class="product__info">
-                            <h3 class="product__title">microphone</h3>
-                            <h4 class="price">$120.25</h4>
-                            <p class="ratting">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <span>4.99</span>
-
-                            </p>
-                            <p class="product__des">Wordwide shifting available
-                                Buyers protection possible!</p>
-                        </div>
-
-                    </div>
-                    <div class="single__product">
-                        <img src="images/airpod.png" alt="">
-                        <div class="product__info">
-                            <h3 class="product__title">Airbuds</h3>
-                            <h4 class="price">$100.00</h4>
-                            <p class="ratting">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <span>4.99</span>
-
-                            </p>
-                            <p class="product__des">Wordwide shifting available
-                                Buyers protection possible!</p>
-                        </div>
-
-                    </div>
-                    <div class="single__product">
-                        <img src="images/mic.png" alt="">
-                        <div class="product__info">
-                            <h3 class="product__title">Drone</h3>
-                            <h4 class="price">$980.25</h4>
-                            <p class="ratting">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <span>4.99</span>
-
-                            </p>
-                            <p class="product__des">Wordwide shifting available
-                                Buyers protection possible!</p>
-                        </div>
-
-                    </div>
-                    <div class="single__product">
-                        <img src="images/lights.png" alt="">
-                        <div class="product__info">
-                            <h3 class="product__title">Light Setup</h3>
-                            <h4 class="price">$1200.00</h4>
-                            <p class="ratting">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <span>4.99</span>
-
-                            </p>
-                            <p class="product__des">Wordwide shifting available
-                                Buyers protection possible!</p>
-                        </div>
-
-                    </div>
-                    <div class="single__product">
-                        <img src="images/setup.png" alt="">
-                        <div class="product__info">
-                            <h3 class="product__title">Photoshoot set</h3>
-                            <h4 class="price">$820.40</h4>
-                            <p class="ratting">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <span>4.99</span>
-
-                            </p>
-                            <p class="product__des">Wordwide shifting available
-                                Buyers protection possible!</p>
-                        </div>
-
-                    </div>
-                    <div class="single__product">
-                        <img src="images/camera.png" alt="">
-                        <div class="product__info">
-                            <h3 class="product__title">Vlogging Camera</h3>
-                            <h4 class="price">$1800.80</h4>
-                            <p class="ratting">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <span>4.99</span>
-
-                            </p>
-                            <p class="product__des">Wordwide shifting available
-                                Buyers protection possible!</p>
-                        </div>
-
-                    </div>
-                    <div class="single__product">
-                        <img src="images/single-light.png" alt="">
-                        <div class="product__info">
-                            <h3 class="product__title">Green Screen</h3>
-                            <h4 class="price">$25.48</h4>
-                            <p class="ratting">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <span>4.99</span>
-
-                            </p>
-                            <p class="product__des">Wordwide shifting available
-                                Buyers protection possible!</p>
-                        </div>
-
-                    </div>
-                    <div class="single__product">
-                        <img src="images/mic.png" alt="">
-                        <div class="product__info">
-                            <h3 class="product__title">Action Camera</h3>
-                            <h4 class="price">$380.00</h4>
-                            <p class="ratting">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <span>4.99</span>
-
-                            </p>
-                            <p class="product__des">Wordwide shifting available
-                                Buyers protection possible!</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="btn_wrapper">
-                    <button class="btn">See More <i class="fa-solid fa-arrow-right"></i></button>
-                </div>
+          </div>
+        </div>
+      </section>
+      <!-- brand section html  -->
+      <section class="brand">
+        <div class="container">
+          <div class="brand__wrapper">
+            <div>
+              <img src="logos/Alibaba.svg" alt="" />
             </div>
-        </section>
-
-        <!-- featured product  -->
-
-        <section class="featured__product">
-            <div class="container">
-                <div class="featured__product_wrapper">
-                    <div class="image_wrap">
-                        <img src="images/gear.png" alt="">
-
-                    </div>
-                    <div class="content__wrap">
-                        <h3 class="featured__title">Featured products at one place</h3>
-                        <p class="featured__des">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                            sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
-                            nostrud amet.</p>
-
-                        <button class="btn">Join Now <i class="fa-solid fa-arrow-right"></i></button>
-
-                    </div>
-                </div>
+            <div>
+              <img src="logos/Amazon.svg" alt="" />
             </div>
-        </section>
+            <div>
+              <img src="logos/Daraz.pk Logo.svg" alt="" />
+            </div>
+            <div>
+              <img src="logos/Ebay.svg" alt="" />
+            </div>
+            <div>
+              <img src="logos/Rakuten.svg" alt="" />
+            </div>
+            <div>
+              <img src="logos/Target.svg" alt="" />
+            </div>
+            <div>
+              <img src="logos/Walmart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product section html  -->
+
+      <section class="products">
+        <div class="container">
+          <h3 class="section__title">Popular Collection</h3>
+          <div class="products__wrapper">
+            <div class="single__product">
+              <img src="images/tripod.png" alt="" />
+              <div class="product__info">
+                <h3 class="product__title">Flex Tripod</h3>
+                <h4 class="price">$50.48</h4>
+                <p class="ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.99</span>
+                </p>
+                <p class="product__des">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+            </div>
+            <div class="single__product">
+              <img src="images/mic.png" alt="" />
+              <div class="product__info">
+                <h3 class="product__title">microphone</h3>
+                <h4 class="price">$120.25</h4>
+                <p class="ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.99</span>
+                </p>
+                <p class="product__des">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+            </div>
+            <div class="single__product">
+              <img src="images/airpod.png" alt="" />
+              <div class="product__info">
+                <h3 class="product__title">Airbuds</h3>
+                <h4 class="price">$100.00</h4>
+                <p class="ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.99</span>
+                </p>
+                <p class="product__des">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+            </div>
+            <div class="single__product">
+              <img src="images/mic.png" alt="" />
+              <div class="product__info">
+                <h3 class="product__title">Drone</h3>
+                <h4 class="price">$980.25</h4>
+                <p class="ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.99</span>
+                </p>
+                <p class="product__des">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+            </div>
+            <div class="single__product">
+              <img src="images/lights.png" alt="" />
+              <div class="product__info">
+                <h3 class="product__title">Light Setup</h3>
+                <h4 class="price">$1200.00</h4>
+                <p class="ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.99</span>
+                </p>
+                <p class="product__des">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+            </div>
+            <div class="single__product">
+              <img src="images/setup.png" alt="" />
+              <div class="product__info">
+                <h3 class="product__title">Photoshoot set</h3>
+                <h4 class="price">$820.40</h4>
+                <p class="ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.99</span>
+                </p>
+                <p class="product__des">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+            </div>
+            <div class="single__product">
+              <img src="images/camera.png" alt="" />
+              <div class="product__info">
+                <h3 class="product__title">Vlogging Camera</h3>
+                <h4 class="price">$1800.80</h4>
+                <p class="ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.99</span>
+                </p>
+                <p class="product__des">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+            </div>
+            <div class="single__product">
+              <img src="images/single-light.png" alt="" />
+              <div class="product__info">
+                <h3 class="product__title">Green Screen</h3>
+                <h4 class="price">$25.48</h4>
+                <p class="ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.99</span>
+                </p>
+                <p class="product__des">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+            </div>
+            <div class="single__product">
+              <img src="images/mic.png" alt="" />
+              <div class="product__info">
+                <h3 class="product__title">Action Camera</h3>
+                <h4 class="price">$380.00</h4>
+                <p class="ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.99</span>
+                </p>
+                <p class="product__des">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btn_wrapper">
+            <button class="btn">
+              See More <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- featured product  -->
+
+      <section class="featured__product">
+        <div class="container">
+          <div class="featured__product_wrapper">
+            <div class="image_wrap">
+              <img src="images/gear.png" alt="" />
+            </div>
+            <div class="content__wrap">
+              <h3 class="featured__title">Featured products at one place</h3>
+              <p class="featured__des">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+
+              <button class="btn">
+                Join Now <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-<footer class="footer">
-    <div class="container">
-       <h3 class="logo__content">Influencer products</h3>
-       <p class="copy__right"> Copyright © 2020  influencer products<br> All rights reserved</p>
-       <ul>
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-dribbble"></i></li>
-        <li><i class="fa-brands fa-twitter"></i></li>
-        <li><i class="fa-brands fa-youtube"></i></li>
-       </ul>
-    </div>
-</footer>
-</body>
-
+    <footer class="footer">
+      <div class="container">
+        <h3 class="logo__content">Influencer products</h3>
+        <p class="copy__right">
+          Copyright © 2020 influencer products<br />
+          All rights reserved
+        </p>
+        <ul>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-dribbble"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>

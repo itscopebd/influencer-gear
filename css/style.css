@@ -89,9 +89,46 @@ section.featured__product,
 --------------------  */
 
 /* phone nav  */
+
+
+
+
 nav.phone__nav{
     display: none;
 }
+ul.mobile__menu {
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: -111px;
+    padding: 10px 15px;
+    /* margin-top: 16px; */
+    transition: .5s;
+    
+}
+
+
+.show__mobile__menu {
+    position: absolute !important;
+    left: 40px !important;
+    top: 75px !important;
+    width: 200px !important;
+    background-color: #6C6C6C !important;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.show__mobile__menu li{
+    width: 100%;
+    padding: 5px 0;
+    margin: 0 !important;
+}
+.show__mobile__menu li a{
+    color: #fff !important;
+    display: block !important;
+}
+
+
 header {
     padding: 30px 0;
 }
@@ -117,7 +154,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 nav li a {
