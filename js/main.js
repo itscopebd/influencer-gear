@@ -1,7 +1,5 @@
 const humburger = document.getElementById("hunburger");
 const mobile__menu = document.getElementById("mobile__menu");
-// const mobile__menu = document.getElementsByClassName("mobile__menu")[0];
-// const xmark = document.getElementsByClassName("fa-bars")[1];
 const bars = document.getElementById("bars");
 humburger.addEventListener("click", () => {
   
