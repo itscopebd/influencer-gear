@@ -68,11 +68,7 @@ a {
  section padding
 -------------------*/
 
-section.banner,
-section.brand,
-section.products,
-section.featured__product,
-.footer {
+.section__gap {
   padding: 50px 0;
 }
 
@@ -98,6 +94,31 @@ section.featured__product,
   align-items: center;
 }
 
+/* make three collumn  */
+.col__three {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* make four collumn  */
+.col__four{
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+}
 /* -----------------
       header styles
 --------------------  */
@@ -174,6 +195,12 @@ nav li a {
   color: var(--secondary-color);
 }
 
+
+.destop__nav ul{
+  position: relative;
+}
+
+
 /*---------------
  banner styles 
  ----------------*/
@@ -233,26 +260,11 @@ nav li a {
 /*-----------------------
  product section styles 
 -------------------------*/
-.products .container {
+/* .products .container {
   width: 75%;
-}
+} */
 
-.products__wrapper {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-}
 
-.single__product {
-  background: #ffffff;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  padding: 20px;
-}
-
-.single__product img {
-  width: 100%;
-}
 
 .product__title {
   font-family: var(--primary-font);
@@ -389,6 +401,19 @@ input[type="email"]:focus {
 
 /* singup page css end here  */
 
+
+
+/* search bar css start here  */
+
+
+
+
+
+
+/* search bar css end here  */
+
+
+
 /*----------------- 
 footer styles 
 --------------------*/
@@ -430,6 +455,7 @@ footer styles
   font-size: 18px;
   background-color: #23203a;
 }
+
 
 /*-------------------
  resposive styles
@@ -486,6 +512,9 @@ footer styles
     .col__two{
     grid-template-columns: auto;
     }
+    .col__three{
+      grid-template-columns: repeat(1,1fr);
+    }
   .banner__wrapper {
     flex-direction: column-reverse;
   }
@@ -499,7 +528,7 @@ footer styles
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 100px);
   }
-  .products__wrapper {
+  .col__four {
     grid-template-columns: repeat(1, 1fr);
   }
   .featured__product_wrapper {
