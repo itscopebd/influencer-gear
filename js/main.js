@@ -47,9 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <i class="fa-solid fa-star-half-stroke"></i>
                   <span>${element.review}</span>
                 </p>
-                <p class="product__des">
-                  ${element.short_description}
-                </p>
+                
                 <button type="button" class="btn" onclick="addToCard(${element.id})" id="addToCardBtn">add to card</button>
               </div>
     `;

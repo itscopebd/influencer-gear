@@ -9,7 +9,7 @@
   },
   {"id": "2",
     "name": "GorillaPod Pro",
-    "image": "https://example.com/tripod2.jpg",
+    "image": "https://i.ibb.co/d77rLfz/feature3.png",
     "price": 34.99,
     "review": 4.7,
     "short_description": "Professional-grade flexible tripod with precise control."
@@ -17,7 +17,7 @@
   {
     "id": "3",
     "name": "Ultra-Flex Tripod",
-    "image": "https://example.com/tripod3.jpg",
+    "image": "https://i.ibb.co/tPqMY0J/feature4.png",
     "price": 29.99,
     "review": 4.6,
     "short_description": "Bendable legs for unique angles and stable shots."
@@ -25,7 +25,7 @@
   {
     "id": "4",
     "name": "Traveler's Companion Tripod",
-    "image": "https://example.com/tripod4.jpg",
+    "image": "https://i.ibb.co/S0kygn2/feature5.png",
     "price": 24.99,
     "review": 4.4,
     "short_description": "Perfect for capturing memories on your journeys."
@@ -33,7 +33,7 @@
   {
     "id": "5",
     "name": "Flexible Smartphone Tripod",
-    "image": "https://example.com/tripod5.jpg",
+    "image": "https://i.ibb.co/zVxN2zX/feature6.png",
     "price": 14.99,
     "review": 4.2,
     "short_description": "Ideal for hands-free phone photography and video."
@@ -41,7 +41,7 @@
   {
     "id": "6",
     "name": "ProFlex Camera Tripod",
-    "image": "https://example.com/tripod6.jpg",
+    "image": "https://i.ibb.co/thZFjjW/feature7.png",
     "price": 39.99,
     "review": 4.8,
     "short_description": "Sturdy and adaptable tripod for serious photographers."
@@ -57,7 +57,7 @@
   {
     "id": "8",
     "name": "Miniature Flexible Tripod",
-    "image": "https://example.com/tripod8.jpg",
+    "image": "https://i.ibb.co/7pLMm4b/feature8.png",
     "price": 9.99,
     "review": 4.0,
     "short_description": "Compact size for lightweight cameras and action cams."
