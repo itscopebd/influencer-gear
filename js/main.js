@@ -29,9 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const createElements = (data) => {
     const showItems = document.getElementById("new__arrival");
-    console.log(data);
     data.forEach((element) => {
-        console.log(element.name)
       let createCard = document.createElement("div");
       createCard.className = "card";
       createCard.innerHTML = `
@@ -56,18 +54,40 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 });
 
+const getShoppingCart = () => {
+  let shoppingCart = {};
+  const storedCart = localStorage.getItem("shopping-cart");
+  if (storedCart) {
+    shoppingCart = JSON.parse(storedCart);
+  }
+  return shoppingCart;
+};
 
+// add to card
 
+const addToCard = (id) => {
+  let shoppingCart = getShoppingCart();
+  const quantity = shoppingCart[id];
+  if (!quantity) {
+    shoppingCart[id] = 1;
+  } else {
+    alert("This Product Already Added!");
+  }
+  localStorage.setItem("shopping-cart", JSON.stringify(shoppingCart));
+  quantityUpdate();
+};
 
+// quentity update front end
+const quantityUpdate = () => {
+  const showQuatity = document.getElementById("cardQuantity");
+  const getQuantity = localStorage.getItem("shopping-cart");
+  const convert = JSON.parse(getQuantity);
+  let totalSum = 0;
+  for (let key in convert) {
+    const value = convert[key];
+    totalSum = totalSum + value;
+  }
+  showQuatity.innerHTML = totalSum;
+};
 
-// add to card 
-
-const addToCard=(id)=>{
-  console.log(id)
-const addToCardBtn= document.getElementById("addToCardBtn");
-const cardQuantity= document.getElementById("cardQuantity");
-addToCardBtn.disabled=true;
-console.log(addToCardBtn)
-
-
-}
+quantityUpdate();

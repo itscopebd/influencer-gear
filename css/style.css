@@ -166,7 +166,12 @@ a {
 /* -----------------
       header styles
 --------------------  */
-
+header {
+  background: lightgray;
+  position: fixed;
+  width: 100%;
+  z-index: 9999999 !important;
+}
 /* phone nav  */
 
 nav.phone__nav {
@@ -411,6 +416,7 @@ nav li a {
   width: 60%;
   margin: auto;
   padding: 100px 0;
+  margin: 50px auto;
 }
 .singup__img img {
   width: 100%;
