@@ -17,6 +17,8 @@ body {
   --secondary-color: #3a3a3a;
   --product-title-color: #18191f;
   --product_description_color: #787885;
+  --light_gray:#d3d3d3;
+  --white:#fff;
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Inter", sans-serif;
   --third-font: "Manrope", sans-serif;
@@ -304,14 +306,67 @@ nav li a {
 }
 
 /*------------
-/* services section css start here  */
+ services section css start here 
+--------------*/
+
 .services__content__wrap {
   text-align: center;
 }
 .services__content__wrap h3{
   margin: 10px 0;
 }
-/* services section css end here  */
+/*------------
+services section css end here 
+--------------*/
+
+/*------------
+ services section css start here
+--------------*/
+.splide__slide {
+  padding: 40px 50px;
+  text-align: center!important;
+  background-color: var(--light_gray);
+  border-radius: 10px;
+
+} 
+.splide__slide img {
+  width: 70px;
+  height: 70px;
+}
+.splide__slide h3{
+  font-size: 25px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.splide__slide p{
+  font-size: 20px;
+  
+}
+.splide__pagination__page.is-active{
+  background-color: var(--white);
+  opacity: 1;
+}
+.splide__pagination__page{
+  background-color: #000;
+  opacity: 1;
+}
+.splide__arrow{
+  background-color: var(--primary-color);
+  opacity: 1;
+}
+.splide__arrow svg{
+  fill: #fff;
+}
+.splide__slide.is-active.is-visible{
+  margin: 0 20px;
+  background-color: var(--primary-color);
+}
+.splide__slide.is-active.is-visible h3,.splide__slide.is-active.is-visible p{
+  color: var(--white);
+}
+
+/*------------
+services section css end here
 --------------*/
 
 

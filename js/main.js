@@ -118,3 +118,36 @@ const showCategory = (data) => {
               category.appendChild(createCart)
   })
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// splide js 
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".splide", {
+    type: "loop",
+    perPage: 3,
+    focus: "center",
+    autoplay: true
+  });
+
+  splide.mount();
+});
