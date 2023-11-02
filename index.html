@@ -10,6 +10,12 @@
       src="https://kit.fontawesome.com/286c7c8f95.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Link to the file hosted on your server, -->
+<link rel="stylesheet" href="path-to-the-file/splide.min.css">
+
+
+<!-- or link to the CDN -->
+<link rel="stylesheet" href="url-to-cdn/splide.min.css">
     <!-- styles  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -68,7 +74,13 @@
             <!-- search bar  -->
             <li><i class="fa-solid fa-magnifying-glass"></i></li>
             <!-- search bar  -->
-            <li> <a href="#"><i class="fa-solid fa-cart-shopping"> <sup style="color:red" id="cardQuantity">0</sup> </i></a> </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-cart-shopping">
+                  <sup style="color: red" id="cardQuantity">0</sup>
+                </i></a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -123,175 +135,52 @@
           </div>
         </div>
       </section>
+
+      <!-- services section html start here -->
+
+      <section class="section__gap" id="services">
+        <div class="container">
+          <div class="col__four">
+            <div class="services__content__wrap">
+              <img src="images//delivery-van_2.png" alt="" />
+              <div>
+                <h3>Free Shipping</h3>
+                <p>On all orders over $75.00</p>
+              </div>
+            </div>
+            <div class="services__content__wrap">
+              <img src="images/half-filled-rating-star_1.png" alt="" />
+              <div>
+                <h3>Quality & Saving </h3>
+                <p>Provide high quality products.</p>
+              </div>
+            </div>
+            <div class="services__content__wrap">
+              <img src="images/credit-card_2.png" alt="" />
+              <div>
+                <h3>100% Payment Secure </h3>
+                <p>Your payment are safe with us.</p>
+              </div>
+            </div>
+            <div class="services__content__wrap">
+              <img src="images/download.png" alt="" />
+              <div>
+                <h3>Support 24/7</h3>
+                <p>Contact us 24 hours a day</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services section html end here -->
+
       <!-- product section html  -->
 
       <section class="products section__gap">
         <div class="container">
           <h3 class="section__title">Popular Collection</h3>
           <div class="col__three" id="category">
-            <!-- <div class="card">
-
-            <figure>  <img src="images/tripod.png" alt="" /></figure>
-              <div class="product__info">
-                <h3 class="product__title">Flex Tripod</h3>
-                <h4 class="price">$50.48</h4>
-                <p class="ratting">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span>4.99</span>
-                </p>
-                <p class="product__des">
-                  Wordwide shifting available Buyers protection possible!
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <figure><img src="images/mic.png" alt="" /></figure>
-              <div class="product__info">
-                <h3 class="product__title">microphone</h3>
-                <h4 class="price">$120.25</h4>
-                <p class="ratting">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span>4.99</span>
-                </p>
-                <p class="product__des">
-                  Wordwide shifting available Buyers protection possible!
-                </p>
-              </div>
-            </div>
-            <div class="card">
-             <figure> <img src="images/airpod.png" alt="" /></figure>
-              <div class="product__info">
-                <h3 class="product__title">Airbuds</h3>
-                <h4 class="price">$100.00</h4>
-                <p class="ratting">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span>4.99</span>
-                </p>
-                <p class="product__des">
-                  Wordwide shifting available Buyers protection possible!
-                </p>
-              </div>
-            </div>
-            <div class="card">
-            <figure>  <img src="images/mic.png" alt="" /></figure>
-              <div class="product__info">
-                <h3 class="product__title">Drone</h3>
-                <h4 class="price">$980.25</h4>
-                <p class="ratting">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span>4.99</span>
-                </p>
-                <p class="product__des">
-                  Wordwide shifting available Buyers protection possible!
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <figure><img src="images/lights.png" alt="" /></figure>
-              <div class="product__info">
-                <h3 class="product__title">Light Setup</h3>
-                <h4 class="price">$1200.00</h4>
-                <p class="ratting">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span>4.99</span>
-                </p>
-                <p class="product__des">
-                  Wordwide shifting available Buyers protection possible!
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <figure><img src="images/setup.png" alt="" /></figure>
-              <div class="product__info">
-                <h3 class="product__title">Photoshoot set</h3>
-                <h4 class="price">$820.40</h4>
-                <p class="ratting">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span>4.99</span>
-                </p>
-                <p class="product__des">
-                  Wordwide shifting available Buyers protection possible!
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <figure><img src="images/camera.png" alt="" /></figure>
-              <div class="product__info">
-                <h3 class="product__title">Vlogging Camera</h3>
-                <h4 class="price">$1800.80</h4>
-                <p class="ratting">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span>4.99</span>
-                </p>
-                <p class="product__des">
-                  Wordwide shifting available Buyers protection possible!
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <figure><img src="images/single-light.png" alt="" /></figure>
-              <div class="product__info">
-                <h3 class="product__title">Green Screen</h3>
-                <h4 class="price">$25.48</h4>
-                <p class="ratting">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span>4.99</span>
-                </p>
-                <p class="product__des">
-                  Wordwide shifting available Buyers protection possible!
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <figure><img src="images/mic.png" alt="" /></figure>
-              <div class="product__info">
-                <h3 class="product__title">Action Camera</h3>
-                <h4 class="price">$380.00</h4>
-                <p class="ratting">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span>4.99</span>
-                </p>
-                <p class="product__des">
-                  Wordwide shifting available Buyers protection possible!
-                </p>
-              </div>
-            </div> -->
+            <!-- create category here  -->
           </div>
           <div class="btn_wrapper">
             <button class="btn">
@@ -306,12 +195,9 @@
       <section class="new__arrival section__gap">
         <div class="container">
           <h3 class="section__title">Featured Product</h3>
-        
-            <div id="new__arrival" class="col__four">
 
-            </div>
-          </div>
-        
+          <div id="new__arrival" class="col__four"></div>
+        </div>
       </section>
 
       <!-- featured product  -->
