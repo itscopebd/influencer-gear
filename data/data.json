@@ -1,0 +1,155 @@
+[
+    {
+        "id": "1",
+        "name": "Classic Leather Sneakers",
+        "featuredImage": "classic_leather_sneakers.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 79.99,
+        "rating": 4.5,
+        "category": "men"
+    },
+    {
+        "id": "2",
+        "name": "Formal Oxford Shoes",
+        "featuredImage": "formal_oxford_shoes.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 129.99,
+        "rating": 4.8,
+        "category": "men"
+    },
+    {
+        "id": "3",
+        "name": "Athletic Running Shoes",
+        "featuredImage": "athletic_running_shoes.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 69.99,
+        "rating": 4.7,
+        "category": "men"
+    },
+    {
+        "id": "4",
+        "name": "Casual Loafers",
+        "featuredImage": "casual_loafers.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 59.99,
+        "rating": 4.4,
+        "category": "men"
+    },
+    {
+        "id": "5",
+        "name": "Hiking Boots",
+        "featuredImage": "hiking_boots.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 89.99,
+        "rating": 4.6,
+        "category": "men"
+    },
+    {
+        "id": "6",
+        "name": "Suede Desert Boots",
+        "featuredImage": "suede_desert_boots.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 74.99,
+        "rating": 4.3,
+        "category": "men"
+    },
+    {
+        "id": "7",
+        "name": "Slip-On Sneakers",
+        "featuredImage": "slip-on_sneakers.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 69.99,
+        "rating": 4.5,
+        "category": "men"
+    },
+    {
+        "id": "8",
+        "name": "Leather Dress Shoes",
+        "featuredImage": "leather_dress_shoes.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 119.99,
+        "rating": 4.7,
+        "category": "men"
+    },
+    {
+        "id": "9",
+        "name": "Running Shoes",
+        "featuredImage": "running_shoes.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 74.99,
+        "rating": 4.6,
+        "category": "men"
+    },
+    {
+        "id": "10",
+        "name": "Boat Shoes",
+        "featuredImage": "boat_shoes.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 64.99,
+        "rating": 4.4,
+        "category": "men"
+    },
+    {
+        "id": "11",
+        "name": "High-Top Sneakers",
+        "featuredImage": "high-top_sneakers.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 79.99,
+        "rating": 4.5,
+        "category": "men"
+    },
+    {
+        "id": "12",
+        "name": "Wingtip Brogue Shoes",
+        "featuredImage": "wingtip_brogue_shoes.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 129.99,
+        "rating": 4.8,
+        "category": "men"
+    },
+    {
+        "id": "13",
+        "name": "Trail Running Shoes",
+        "featuredImage": "trail_running_shoes.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 79.99,
+        "rating": 4.7,
+        "category": "men"
+    },
+    {
+        "id":"14",
+        "name": "Moccasin Slippers",
+        "featuredImage": "moccasin_slippers.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 39.99,
+        "rating": 4.2,
+        "category": "men"
+    },
+    {
+        "id": "15",
+        "name": "Chelsea Boots",
+        "featuredImage": "chelsea_boots.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 99.99,
+        "rating": 4.6,
+        "category": "men"
+    },
+    {
+        "id": "16",
+        "name": "Canvas Sneakers",
+        "featuredImage": "canvas_sneakers.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 54.99,
+        "rating": 4.4,
+        "category": "men"
+    },
+    {
+        "id": "17",
+        "name": "Cap-Toe Oxfords",
+        "featuredImage": "cap-toe_oxfords.jpg",
+        "galleryImages": ["image1.jpg", "image2.jpg", "image3.jpg"],
+        "price": 119.99,
+        "rating": 4.7,
+        "category": "men"
+    }
+]

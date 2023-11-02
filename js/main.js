@@ -91,3 +91,30 @@ const quantityUpdate = () => {
 };
 
 quantityUpdate();
+
+// show category
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("data/category.json")
+    .then((res) => res.json())
+    .then((data) => {
+      showCategory(data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+const showCategory = (data) => {
+  const category = document.getElementById("category");
+  data.forEach((value)=>{
+    const createCart=document.createElement("div");
+    createCart.className="card";
+    createCart.innerHTML=`
+    <a href=${value.name}>
+              <figure>  <img src=${value.image} alt=${value.name} /></figure>
+              <div class="product__info">
+                <h3 class="product__title">${value.name}</h3>
+              </div> </a>`; 
+              category.appendChild(createCart)
+  })
+};
