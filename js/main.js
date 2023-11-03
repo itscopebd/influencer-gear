@@ -77,20 +77,6 @@ const addToCard = (id) => {
   quantityUpdate();
 };
 
-// quentity update front end
-const quantityUpdate = () => {
-  const showQuatity = document.getElementById("cardQuantity");
-  const getQuantity = localStorage.getItem("shopping-cart");
-  const convert = JSON.parse(getQuantity);
-  let totalSum = 0;
-  for (let key in convert) {
-    const value = convert[key];
-    totalSum = totalSum + value;
-  }
-  showQuatity.innerHTML = totalSum;
-};
-
-quantityUpdate();
 
 // show category
 
@@ -106,47 +92,38 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 const showCategory = (data) => {
   const category = document.getElementById("category");
-  data.forEach((value)=>{
-    const createCart=document.createElement("div");
-    createCart.className="card";
-    createCart.innerHTML=`
+  data.forEach((value) => {
+    const createCart = document.createElement("div");
+    createCart.className = "card";
+    createCart.innerHTML = `
     <a href=${value.name}>
               <figure>  <img src=${value.image} alt=${value.name} /></figure>
               <div class="product__info">
                 <h3 class="product__title">${value.name}</h3>
-              </div> </a>`; 
-              category.appendChild(createCart)
-  })
+              </div> </a>`;
+    category.appendChild(createCart);
+  });
 };
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// splide js 
+// splide js
 
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".splide", {
     type: "loop",
     perPage: 3,
     focus: "center",
-    autoplay: true
+    autoplay: true,
+    gap: "1rem",
+    breakpoints: {
+      992: {
+        perPage: 2,
+      },
+      576: {
+        perPage: 1,
+      },
+    },
   });
 
   splide.mount();

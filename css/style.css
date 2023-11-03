@@ -358,7 +358,7 @@ services section css end here
   fill: #fff;
 }
 .splide__slide.is-active.is-visible{
-  margin: 0 20px;
+  /* margin: 0 20px; */
   background-color: var(--primary-color);
 }
 .splide__slide.is-active.is-visible h3,.splide__slide.is-active.is-visible p{

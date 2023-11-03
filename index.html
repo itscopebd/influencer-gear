@@ -49,7 +49,7 @@
               </div>
             </div>
 
-            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li onclick="showAddtoCartProduct()"><i class="fa-solid fa-cart-shopping"></i></li>
           </ul>
           <!-- mobile navbar  -->
 
@@ -73,8 +73,8 @@
             <!-- search bar  -->
             <li><i class="fa-solid fa-magnifying-glass"></i></li>
             <!-- search bar  -->
-            <li>
-              <a href="#"
+            <li onclick="showAddtoCartProduct()">
+              <a  href="cart.html"
                 ><i class="fa-solid fa-cart-shopping">
                   <sup style="color: red" id="cardQuantity">0</sup>
                 </i></a
@@ -284,5 +284,6 @@
     </footer>
     <script src="js/splide.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>

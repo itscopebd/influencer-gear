@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Singup</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Influencer-gear</title>
+    <!-- fontawesome  -->
     <script
       src="https://kit.fontawesome.com/286c7c8f95.js"
       crossorigin="anonymous"
     ></script>
+    
+    <!-- styles  -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <!-- header html  -->
     <header>
@@ -65,7 +70,7 @@
             <li><i class="fa-solid fa-magnifying-glass"></i></li>
             <!-- search bar  -->
             <li onclick="showAddtoCartProduct()">
-              <a  href="cart.html"
+              <a  href="#"
                 ><i class="fa-solid fa-cart-shopping">
                   <sup style="color: red" id="cardQuantity">0</sup>
                 </i></a
@@ -76,47 +81,30 @@
       </div>
     </header>
 
-    <div class="container">
-      <div class="singup_wrapper col__two card">
-        <div class="singup__img">
-          <img src="images/singup.png" alt="" />
-        </div>
-        <div class="singup__form">
-            <h3 class="section__title">Login Now</h3>
-          <form action="">
-            <div>
-                <label for="">Email *</label>
-                <input type="email" name="email" placeholder="Enter Your Email" />
-            </div>
-            <div>
-                <label for="">Password *</label>
-                <input type="password" name="password" placeholder="Enter Your Password" />
-            </div>
-            <div class="">
-                <input class="btn" type="submit" value="Login" />
-                <p>Don't have an account? <a href="singup.html">SingUp</a></p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+<main>
 
-    <footer class="footer">
-      <div class="container">
-        <h3 class="logo__content">Influencer products</h3>
-        <p class="copy__right">
-          Copyright © 2020 influencer products<br />
-          All rights reserved
-        </p>
-        <ul>
-          <li><i class="fa-brands fa-instagram"></i></li>
-          <li><i class="fa-brands fa-dribbble"></i></li>
-          <li><i class="fa-brands fa-twitter"></i></li>
-          <li><i class="fa-brands fa-youtube"></i></li>
-        </ul>
-      </div>
-    </footer>
 
-    <script src="js/common.js"></script>
-  </body>
-</html>
+
+
+</main>
+
+    <footer class="footer section__gap">
+        <div class="container">
+          <h3 class="logo__content">Influencer products</h3>
+          <p class="copy__right">
+            Copyright © 2020 influencer products<br />
+            All rights reserved
+          </p>
+          <ul>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-dribbble"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </div>
+      </footer>
+      
+      <script src="js/cart.js"></script> 
+      <script src="js/common.js"></script> 
+    </body>
+  </html>
