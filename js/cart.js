@@ -2,7 +2,7 @@
 let filterData = [];
 const filterAddtoCartProduct = () => {
   const selectedId = JSON.parse(localStorage.getItem("shopping-cart"));
-
+console.log("Rofiq,,,")
   fetch("data/newArrival.json")
     .then((res) => res.json())
     .then((data) => {
@@ -31,7 +31,7 @@ const showAddtoCartProduct = (data) => {
               <td><input type="number" onclick="updateQuantity(${product.id})" id="updateQuantity" min="1" value="1"></td>
               <td><span>$</span> ${product.price}</td>
               <td><span>$</span> ${product.price}</td>
-              <td><button class="btn"><i class="fa-solid fa-trash"></i></button></td>
+              <td><button onclick="removeCartItem(${product.id})" class="btn"><i class="fa-solid fa-trash"></i></button></td>
       
       `;
     createCartProduct.appendChild(createElements);
@@ -40,7 +40,7 @@ const showAddtoCartProduct = (data) => {
 
 
 
-// update quantity in localhost 
+// update quantity in localStorage
 const updateQuantity = (id) => {
 
   let shoppingCart = {};
@@ -54,3 +54,23 @@ const updateQuantity = (id) => {
   localStorage.setItem("shopping-cart", JSON.stringify(shoppingCart))
   quantityUpdate()
 };
+
+
+// remove cart items 
+
+const removeCartItem=(id)=>{
+  const data=JSON.parse(localStorage.getItem("shopping-cart"));
+
+for(key in data){
+  if (key==id) {
+    const success=delete data[key];
+    if (success) {
+      localStorage.setItem("shopping-cart",JSON.stringify(data));
+      filterAddtoCartProduct();
+      quantityUpdate();
+      location.reload()
+    }
+  }
+}
+ 
+}
