@@ -170,7 +170,6 @@ a {
 --------------------  */
 header {
   background: lightgray;
-  position: fixed;
   width: 100%;
   z-index: 9999999 !important;
 }
@@ -516,6 +515,47 @@ input[type="email"]:focus {
 /* search bar css start here  */
 
 /* search bar css end here  */
+
+
+/*----------------- 
+cart page styles start here
+--------------------*/
+
+table{
+  width: 100%;
+  text-align: center;
+}
+table,th,tr,td{
+  border: 1px solid var(--light_gray);
+  padding: 15px;
+}
+table{
+  border-collapse: collapse;
+}
+
+#createCartProduct input[type="number"]{
+  width: 40%;
+  border: 1px solid;
+}
+/* input[type="text"], input[type="number"], input[type="password"], input[type="email"] {
+  padding: 10px 5px;
+  width: 100%;
+  box-shadow: #3a3a3a;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  outline: none;
+  border-radius: 3px;
+} */
+/*----------------- 
+cart page styles end here
+--------------------*/
+
+
+
+
+
+
 
 /*----------------- 
 footer styles 

@@ -1,25 +1,42 @@
-
-
 // customer selected product show checkpout page
+let filterData = [];
+const filterAddtoCartProduct = () => {
+  const selectedId = JSON.parse(localStorage.getItem("shopping-cart"));
 
-const showAddtoCartProduct = () => {
-    const selectedId = JSON.parse(localStorage.getItem("shopping-cart"));
-    let filterData = [];
-    fetch("data/newArrival.json")
-      .then((res) => res.json())
-      .then((data) => {
-        for (key in selectedId) {
-          data.forEach((product) => {
-            if (product.id === key) {
-              filterData.push(product);
-            }
-          });
-        }
-      });
-  };
+  fetch("data/newArrival.json")
+    .then((res) => res.json())
+    .then((data) => {
+      for (key in selectedId) {
+        data.forEach((product) => {
+          if (product.id === key) {
+            filterData.push(product);
+          }
+        });
+      }
+      showAddtoCartProduct(filterData);
+    });
+};
 
-  document.addEventListener("DOMContentLoaded",showAddtoCartProduct)
+document.addEventListener("DOMContentLoaded", filterAddtoCartProduct);
 
+const showAddtoCartProduct = (data) => {
+  let createCartProduct = document.getElementById("createCartProduct");
+
+  data.forEach((product) => {
+    let createElements = document.createElement("tr");
+    createElements.innerHTML = `
+      
+              <td><img style="width:150px;height:150px;border-radius:50%" src=${product.image} alt=""></td>
+              <td><h4>${product.name} </h4></td>
+              <td><input type="number" id="updateQuantity" min="1" value="1"></td>
+              <td><span>$</span> ${product.price}</td>
+              <td><span>$</span> ${product.price}</td>
+              <td><button class="btn"><i class="fa-solid fa-trash"></i></button></td>
+      
+      `;
+      createCartProduct.appendChild(createElements)
+  });
+};
 
 //   const getShoppingCart = () => {
 //     let shoppingCart = {};
@@ -30,7 +47,7 @@ const showAddtoCartProduct = () => {
 //     return shoppingCart;
 //   };
 
-  // add to card
+// add to card
 
 // const addToCard = (id) => {
 //     let shoppingCart = getShoppingCart();
@@ -43,6 +60,3 @@ const showAddtoCartProduct = () => {
 //     localStorage.setItem("shopping-cart", JSON.stringify(shoppingCart));
 //     quantityUpdate();
 //   };
-  
-  // quentity update front end
-
