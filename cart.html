@@ -10,7 +10,7 @@
       src="https://kit.fontawesome.com/286c7c8f95.js"
       crossorigin="anonymous"
     ></script>
-    
+
     <!-- styles  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -45,7 +45,9 @@
               </div>
             </div>
 
-            <li onclick="showAddtoCartProduct()"><i class="fa-solid fa-cart-shopping"></i></li>
+            <li onclick="showAddtoCartProduct()">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </li>
           </ul>
           <!-- mobile navbar  -->
 
@@ -70,7 +72,7 @@
             <li><i class="fa-solid fa-magnifying-glass"></i></li>
             <!-- search bar  -->
             <li onclick="showAddtoCartProduct()">
-              <a  href="#"
+              <a href="#"
                 ><i class="fa-solid fa-cart-shopping">
                   <sup style="color: red" id="cardQuantity">0</sup>
                 </i></a
@@ -81,50 +83,67 @@
       </div>
     </header>
 
-<main>
-<section id="breadcrumbs-section" class="section__gap">
-    <div class="container">
-        <h3 class="section__title">Your Shopping Cart</h3>
+    <main>
+      <section id="breadcrumbs-section" class="section__gap">
+        <div class="container">
+          <h3 class="section__title">Your Shopping Cart</h3>
 
-        <table>
-          <thead>
-            <th>Image</th>
-            <th>Title</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Total Price</th>
-            <th>Action</th>
+          <table>
+            <thead>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total Price</th>
+              <th>Action</th>
+            </thead>
+            <tbody id="createCartProduct"></tbody>
+          </table>
+        </div>
+      </section>
 
-          </thead>
-          <tbody id="createCartProduct">
+      <section id="totalCarts" class="section__gap">
+        <div class="container">
+          <div class="total__carts__wrap">
+            <div class="content__wrap">
+              <h3 class="section__title">Total Carts</h3>
+              <div class="subTotal">
+                <p>Sub Total</p>
+                <span>$ 454</span>
+              </div>
+              <div class="total">
+                <p>Total</p>
+                <span>$ 890</span>
+              </div>
+           
+            </div>
             
-          </tbody>
-        </table>
-    </div>
-
-</section>
-
-
-
-</main>
+          </div>
+         <div class="btn__wrap">
+          <button class="btn">CONTINUE SHOPPING</button>
+          <button class="btn">PROCEED TO CHECKOUT</button>
+         </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer section__gap">
-        <div class="container">
-          <h3 class="logo__content">Influencer products</h3>
-          <p class="copy__right">
-            Copyright © 2020 influencer products<br />
-            All rights reserved
-          </p>
-          <ul>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-dribbble"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-youtube"></i></li>
-          </ul>
-        </div>
-      </footer>
-      
-      <script src="js/cart.js"></script> 
-      <script src="js/common.js"></script> 
-    </body>
-  </html>
+      <div class="container">
+        <h3 class="logo__content">Influencer products</h3>
+        <p class="copy__right">
+          Copyright © 2020 influencer products<br />
+          All rights reserved
+        </p>
+        <ul>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-dribbble"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

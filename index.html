@@ -11,9 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- splide css -->
-    <link
-      rel="stylesheet" href="css/splide.css"
-    />
+    <link rel="stylesheet" href="css/splide.css" />
 
     <!-- styles  -->
     <link rel="stylesheet" href="css/style.css" />
@@ -49,7 +47,9 @@
               </div>
             </div>
 
-            <li onclick="showAddtoCartProduct()"><i class="fa-solid fa-cart-shopping"></i></li>
+            <li onclick="showAddtoCartProduct()">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </li>
           </ul>
           <!-- mobile navbar  -->
 
@@ -74,7 +74,7 @@
             <li><i class="fa-solid fa-magnifying-glass"></i></li>
             <!-- search bar  -->
             <li onclick="showAddtoCartProduct()">
-              <a  href="cart.html"
+              <a href="cart.html"
                 ><i class="fa-solid fa-cart-shopping">
                   <sup style="color: red" id="cardQuantity">0</sup>
                 </i></a
@@ -222,64 +222,134 @@
         </div>
       </section>
 
-
-<!-- client review section  html start here -->
-<section class="section__gap" id="review">
-<div class="container">
-  <h3 class="section__title">What is client say's</h3>
-  <div class="splide" >
-    <div class="splide__track">
-      <div class="splide__list">
-        <div class="splide__slide">
-          <img src="images/nora.png" alt="">
-          <h3>Nora</h3>
-          <p>The goods arrived on time! Everything is well packed in general, and I'm happy with the order, seller recommend!!</p>
+      <!-- client review section  html start here -->
+      <section class="section__gap" id="review">
+        <div class="container">
+          <h3 class="section__title">What is client say's</h3>
+          <div class="splide">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide">
+                  <img src="images/nora.png" alt="" />
+                  <h3>Nora</h3>
+                  <p>
+                    The goods arrived on time! Everything is well packed in
+                    general, and I'm happy with the order, seller recommend!!
+                  </p>
+                </div>
+                <div class="splide__slide">
+                  <img src="images/isla.png" alt="" />
+                  <h3>Isla</h3>
+                  <p>
+                    Pleasantly surprised. Thanks to the Seller. I recommend!!!
+                    Five stars.
+                  </p>
+                </div>
+                <div class="splide__slide">
+                  <img src="images/zoe.png" alt="" />
+                  <h3>Zoe</h3>
+                  <p>
+                    Very high quality and beautiful. Looks the same as in the
+                    photos. Good value for money. I Recommend it.
+                  </p>
+                </div>
+                <div class="splide__slide">
+                  <img src="images/stella.png" alt="" />
+                  <h3>Stella</h3>
+                  <p>
+                    Excellent product from an excellent seller. The postage was
+                    fast. Highly recommended!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="splide__slide">
-          <img src="images/isla.png" alt="">
-          <h3>Isla</h3>
-          <p>Pleasantly surprised. Thanks to the Seller. I recommend!!! Five stars.  </p>
+      </section>
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
         </div>
-        <div class="splide__slide">
-          <img src="images/zoe.png" alt="">
-          <h3>Zoe</h3>
-          <p>Very high quality and beautiful. Looks the same as in the photos. Good value for money. I Recommend it.</p>
-        </div>
-        <div class="splide__slide">
-          <img src="images/stella.png" alt="">
-          <h3>Stella</h3>
-          <p>Excellent product from an excellent seller. The postage was fast. Highly recommended!</p> </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<section class="splide" aria-label="Splide Basic HTML Example">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <li class="splide__slide">Slide 01</li>
-      <li class="splide__slide">Slide 02</li>
-      <li class="splide__slide">Slide 03</li>
-    </ul>
-  </div>
-</section>
-<!-- client review section  html end here -->
-
-
+      </section>
+      <!-- client review section  html end here -->
     </main>
-    <footer class="footer section__gap">
+    <footer class="footer section__gap" id="footer">
       <div class="container">
-        <h3 class="logo__content">Influencer products</h3>
-        <p class="copy__right">
-          Copyright © 2020 influencer products<br />
-          All rights reserved
-        </p>
-        <ul>
-          <li><i class="fa-brands fa-instagram"></i></li>
-          <li><i class="fa-brands fa-dribbble"></i></li>
-          <li><i class="fa-brands fa-twitter"></i></li>
-          <li><i class="fa-brands fa-youtube"></i></li>
-        </ul>
+        <div class="col__four">
+          <div class="address">
+            <h3 class="logo__content">Influencer products</h3>
+            <p>
+              Fab Getup Shop is a brand that sells products USA. Whatever you
+              need, all you can find here.
+            </p>
+
+            <ul class="social">
+              <a href=""
+                ><li><i class="fa-brands fa-instagram"></i></li
+              ></a>
+              <a href="">
+                <li><i class="fa-brands fa-dribbble"></i></li
+              ></a>
+              <a href=""
+                ><li><i class="fa-brands fa-twitter"></i></li
+              ></a>
+              <a href=""
+                ><li><i class="fa-brands fa-youtube"></i></li
+              ></a>
+            </ul>
+          </div>
+
+          <div class="footerLinks">
+            <h3 class="section__title">Quick Links</h3>
+            <ul>
+              <li><a href="">Blog</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Track Your Order</a></li>
+            </ul>
+          </div>
+          <div class="footerLinks">
+            <h3 class="section__title">Information</h3>
+            <ul>
+              <li><a href="">Return Policy</a></li>
+              <li><a href=""> Privacy Policy</a></li>
+              <li><a href="">Shipping Policy</a></li>
+              <li><a href="">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footerLinks">
+            <h3 class="section__title">Subscribe To Our Newsletter</h3>
+            <p>
+              Subscribe to get special offers, free giveaways, and
+              once-in-a-lifetime deals.
+            </p>
+            <div class="newsletter">
+              <input type="email" placeholder="info@gmail.com" />
+              <button class="btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="col__two">
+            <p class="copy__right">
+              Copyright © 2020 influencer products
+              All rights reserved
+            </p>
+            <div class="payment__icons">
+              <img src="images/american_express.png" alt="" />
+              <img src="images/master.png" alt="" />
+              <img src="images/discover.png" alt="" />
+              <img src="images/paypal.png" alt="" />
+              <img src="images/visa.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="js/splide.js"></script>

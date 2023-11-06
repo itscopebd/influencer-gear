@@ -2,7 +2,6 @@
 let filterData = [];
 const filterAddtoCartProduct = () => {
   const selectedId = JSON.parse(localStorage.getItem("shopping-cart"));
-console.log("Rofiq,,,")
   fetch("data/newArrival.json")
     .then((res) => res.json())
     .then((data) => {
