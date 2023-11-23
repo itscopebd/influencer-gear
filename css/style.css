@@ -473,10 +473,16 @@ services section css end here
 /* singup page css start here  */
 
 .singup_wrapper {
-  width: 60%;
+  width: 80%;
   margin: auto;
   padding: 100px 0;
   margin: 50px auto;
+}
+.singup__img {
+  width: 50%;
+}
+.singup__form {
+  width: 50%;
 }
 .singup__img img {
   width: 100%;
@@ -489,24 +495,42 @@ services section css end here
 label {
   color: var(--primary-color);
 }
+.singup__form form>div{
+margin-top: 8px;
+}
+.singup__form form .btn{
+margin-top: 0px !important;
+margin-bottom: 10px;
+}
+.singup__form form a{
+color: var(--primary-color);
+}
+.singup__form form a:hover{
+color: #000;
+}
+.singup__form .section__title{
+color: #000;
+border-bottom: .5px solid var(--primary-color);
+}
 input[type="text"],
 input[type="number"],
 input[type="password"],
 input[type="email"] {
-  padding: 10px 5px;
+  padding: 15px 10px;
   width: 100%;
   box-shadow: #3a3a3a;
   margin-bottom: 10px;
   border: none;
-  border-bottom: 1px solid var(--primary-color);
+  border: .8px solid var(--primary-color);
   outline: none;
   border-radius: 3px;
+  margin-top: 8px;
 }
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
-  border-bottom: 1px solid var(--product_description_color);
+  border: .8px solid var(--product_description_color);
 }
 
 /* singup page css end here  */
@@ -718,6 +742,21 @@ color: #fff;
  resposive styles
 ---------------------*/
 
+
+/*------------------------
+ max width 1200px styles
+--------------------------*/
+
+@media(max-width:1200px){
+  .singup_wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 100px 0;
+    margin: 50px auto;
+}
+}
+
+
 /*------------------------
  max width 992px styles
 --------------------------*/
@@ -798,9 +837,15 @@ color: #fff;
 
   /* singup page css  */
   .singup_wrapper {
-    width: 80%;
-  }
+    width: 100%;
+    padding: 20px 0;
+    margin: 10px auto;
+}
   .singup__form {
-    padding: 0;
-  }
+    padding: 0 20px;
+    width: 100%;
+}
+  .singup__img {
+    display: none;
+}
 }
