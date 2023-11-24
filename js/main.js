@@ -107,6 +107,23 @@ const showCategory = (data) => {
 
 
 
+// search box hide and show 
+
+
+const searchBox=()=>{
+  console.log("Rfoiq")
+  const search__wrap= document.getElementById("search__wrap");
+  search__wrap.style.display="block";
+}
+
+
+
+
+
+
+
+
+
 // splide js
 
 document.addEventListener("DOMContentLoaded", function () {

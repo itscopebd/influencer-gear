@@ -495,22 +495,22 @@ services section css end here
 label {
   color: var(--primary-color);
 }
-.singup__form form>div{
-margin-top: 8px;
+.singup__form form > div {
+  margin-top: 8px;
 }
-.singup__form form .btn{
-margin-top: 0px !important;
-margin-bottom: 10px;
+.singup__form form .btn {
+  margin-top: 0px !important;
+  margin-bottom: 10px;
 }
-.singup__form form a{
-color: var(--primary-color);
+.singup__form form a {
+  color: var(--primary-color);
 }
-.singup__form form a:hover{
-color: #000;
+.singup__form form a:hover {
+  color: #000;
 }
-.singup__form .section__title{
-color: #000;
-border-bottom: .5px solid var(--primary-color);
+.singup__form .section__title {
+  color: #000;
+  border-bottom: 0.5px solid var(--primary-color);
 }
 input[type="text"],
 input[type="number"],
@@ -521,16 +521,22 @@ input[type="email"] {
   box-shadow: #3a3a3a;
   margin-bottom: 10px;
   border: none;
-  border: .8px solid var(--primary-color);
+  border: 0.8px solid var(--primary-color);
   outline: none;
   border-radius: 3px;
   margin-top: 8px;
 }
+
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
-  border: .8px solid var(--product_description_color);
+  border: 0.8px solid var(--product_description_color);
+}
+
+/* newsletter email  */
+.newsletter input[type="email"] {
+  margin-top: 0 !important;
 }
 
 /* singup page css end here  */
@@ -611,7 +617,7 @@ cart page styles end here
 /*----------------- 
 footer styles 
 --------------------*/
-#footer .col__four{
+#footer .col__four {
   gap: 40px;
 }
 .footer {
@@ -667,7 +673,7 @@ footer styles
   border-bottom: 1px solid #707070;
   position: relative;
 }
-#footer .section__title::after{
+#footer .section__title::after {
   content: "";
   left: 0;
   width: 20%;
@@ -684,43 +690,42 @@ footer styles
   text-align: left;
   margin-top: 20px;
 }
-.footerLinks ul li{
-font-size: 19px;
-transition: .5s;
+.footerLinks ul li {
+  font-size: 19px;
+  transition: 0.5s;
 }
 .footerLinks p {
   margin: 20px 0;
 }
-.footerLinks ul li:hover{
+.footerLinks ul li:hover {
   color: var(--primary-color);
   padding-left: 5px;
-  transition: .5s;
+  transition: 0.5s;
 }
-.newsletter{
+.newsletter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .newsletter .btn {
-  padding: 9px 10px;
+  padding: 13px 10px;
   margin-bottom: 0;
   margin-top: 0;
   border-radius: 0;
-  line-height: 21px;
+  line-height: 24px;
 }
 .newsletter .btn:hover {
-color: #fff;
+  color: #fff;
 }
 .newsletter input[type="email"] {
   margin-bottom: 0;
   border-radius: 0;
-  color:#000;
+  color: #000;
   font-size: 17px;
 }
 
-.footer__bottom{
-  margin-top: 20px;
+.footer__bottom {
+  margin-top: 30px;
   display: flex;
   padding-top: 10px;
   align-items: center;
@@ -734,28 +739,75 @@ color: #fff;
   font-feature-settings: "liga" off;
   color: #fff;
   margin-top: 0 !important;
-
 }
 
+/*-------------------
+header form css start here 
+---------------------*/
+.search__icon{
+  position: relative;
+}
+#search__wrap {
+  display: none;
+  position: absolute;
+  top: 26px;
+  right: 0;
+  width: 265px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input[type="text"] {
+  padding: 10px 10px;
+  margin: 0;
+  border: 0;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border: .8px solid var(--primary-color);
+  border-right: none;
+}
+
+.search input[type="text"]:focus,.search button.searchButton:focus {
+  border: .8px solid var(--primary-color);
+  border-right: none;
+}
+
+.search button.searchButton {
+  padding: 9px 10px;
+  line-height: 17px;
+  border: none;
+  border: .8px solid var(--primary-color);
+  border-left: none;
+}
+
+/*-------------------
+header form css end here 
+---------------------*/
 
 /*-------------------
  resposive styles
 ---------------------*/
 
-
 /*------------------------
  max width 1200px styles
 --------------------------*/
 
-@media(max-width:1200px){
+@media (max-width: 1200px) {
   .singup_wrapper {
     width: 100%;
     margin: auto;
     padding: 100px 0;
     margin: 50px auto;
-}
-}
+  }
 
+  .col__three,
+  .col__four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /*------------------------
  max width 992px styles
@@ -796,6 +848,15 @@ color: #fff;
   }
   .featured__product_wrapper img {
     width: 100%;
+  }
+  .col__three,
+  .col__four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsletter .btn {
+    padding: 13px 10px;
+    line-height: 24px;
+    font-size: 12px;
   }
 }
 
@@ -840,12 +901,35 @@ color: #fff;
     width: 100%;
     padding: 20px 0;
     margin: 10px auto;
-}
+  }
   .singup__form {
     padding: 0 20px;
     width: 100%;
-}
+  }
   .singup__img {
     display: none;
+  }
+  .col__three,
+  .col__four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .newsletter .btn {
+    padding: 13px 10px;
+    line-height: 24px;
+    font-size: 12px;
+  }
 }
+
+@media (max-width: 576px) {
+  .col__three,
+  .col__four {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__bottom .col__two {
+    flex-direction: column;
+  }
 }

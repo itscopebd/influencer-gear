@@ -71,7 +71,22 @@
             <li><a href="singup.html">Sign up</a></li>
             <li><a href="login.html">Log In</a></li>
             <!-- search bar  -->
-            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+           
+            <li class="search__icon" onclick="searchBox()" ><i class="fa-solid fa-magnifying-glass"></i>
+            
+              <div class="wrap" id="search__wrap">
+                <div class="search">
+                  <input
+                    type="text"
+                    class="searchTerm"
+                    placeholder="What are you looking for?"
+                  />
+                  <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
             <!-- search bar  -->
             <li onclick="showAddtoCartProduct()">
               <a href="cart.html"
